@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(38, 138, 149);
+}
+.container{
+    width: 90%;
+    max-width: 470px;
+    color: rgb(200, 160, 160);
+    /* background: linear-gradient(135deg, #282621, #4bf17a, rgb(211, 201, 201),rgb(13, 39, 232)); different color changing */
+    color: #fff;
+    margin: 100px auto 10px;
+    border-radius: 20px;
+    padding: 40px 35px;
+     
+}
+
+
+
+
+.Todo-app{
+     width: 100%;
+     max-width: 540px;
+     background: #fff;
+     
+     padding: 40px 30px 70px;
+     border-radius: 10px;
+}
+
+.Todo-app h2{
+    color: #002765;
+    margin-top: -15px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Todo-app img{
+    width:35px;
+    height: 35px;
+    border-radius: 12px;
+    
+}
+ 
+
+
+
+ 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.btn:hover{
+    border: 2px solid black;
+}
+ 
+
+
+ul li{
+     list-style: none;
+     font-size: 17px;
+     color: #160c0b;
+     padding: 12px 8px 12px 50px;
+     user-select: none;
+     cursor: pointer;
+     position:relative;
+}
+
+ul li::before{
+    content: '';
+    position:absolute;
+    height: 23px;
+    width: 27px;
+    border-radius: 50%; 
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-circle-outline-512.png');
+    background-size:cover;
+    background-position: center;
+    top: 10px;
+    left: 9px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration:line-through;
+   
+}
+ul li.checked::before{
+    background-image: url('https://cdn3.iconfinder.com/data/icons/internet-relative/200/Currenctly-512.png');
+}
+
+ul li span{
+    position: absolute;
+    right:0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+}
+ul li span:hover{
+    background: #7291ce;
+}
